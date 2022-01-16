@@ -28,6 +28,7 @@ export default function ProjectSummary({ project }) {
           {project.assignedUsersList.map(user => (
             <div key={user.id}>
               <Avatar src={user.photoURL} />
+              <div className="display-name">{user.displayName}</div>
             </div>
           ))}
         </div>
